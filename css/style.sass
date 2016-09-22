@@ -1,8 +1,11 @@
-$fG1: #313346 //#6a3093
-$fG2: #182234 //#a044ff
+$fG1: #313346
+$fG2: #182234
 
 body
   font-family: Segoe UI, apple-system-font, Roboto, Helvetica, Arial, Sans-serif
+
+h1,h2, h3, h4, h5, h6
+  font-family: 'Roboto', Roboto, Helvetica, Arial, sans-serif
 
 .menuNav
   border-bottom: 1px solid rgba(255,255,255,0.15)
@@ -21,9 +24,12 @@ body
   background: -webkit-linear-gradient(100deg, $fG1 , $fG2)
   background: linear-gradient(100deg, $fG1 , $fG2)
   color: #fff
+  overflow: hidden
   .card
     color: #111
     padding: 20px
+    position: relative
+    top: 40px
     h1,h2,h3,h4,h5,h6
       text-align: center
       padding-bottom: 12px
@@ -31,3 +37,13 @@ body
   h1
     font-weight: 400
     text-shadow: 0 2px 4px rgba(0,0,0,0.3)
+  &:after
+    content: ""
+    display: inline-block
+    width: 150%
+    height: 150px
+    border-radius: 50%
+    position: relative
+    top: 92px
+    left: -25%
+    background-color: #fff
