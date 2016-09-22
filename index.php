@@ -8,7 +8,7 @@
   <link rel='stylesheet prefetch' href='http://resources.ludvig.xyz/normalize.css'>
   <link rel='stylesheet prefetch' href='http://resources.ludvig.xyz/motus/css/motus.min.css'>
   <link rel='stylesheet prefetch' href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 
 </head>
 
@@ -42,6 +42,11 @@
         </div>
       </ul>
     </div>
+  </div>
+</div>
+<div class="container">
+  <div class="grid-12 center muted pt mb">
+    Copyright &copy; Gefion Programming, <?php echo date("Y");?>
   </div>
 </div>
 
