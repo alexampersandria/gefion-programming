@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,10 +25,10 @@
 <div class="bg header">
   <div class="container">
     <div class="inline menuNav">
-      <div class="grid-6">
+      <div class="grid-6 logo-grid">
         <span class="logo">Gefion Programming</span>
       </div>
-      <div class="grid-6 right">
+      <div class="grid-6 nav-grid">
         <ul>
           <li><a href="#">Theodor</a></li>
           <li><a href="http://elementory.co/">Mads</a></li>
