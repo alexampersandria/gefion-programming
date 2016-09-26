@@ -18,6 +18,10 @@ session_start();
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/motus.js"></script>
+  <script src="js/index.js"></script>
+
 </head>
 
 <body>
@@ -30,7 +34,7 @@ session_start();
       </div>
       <div class="grid-6 nav-grid">
         <ul>
-          <li><a href="#">Theodor</a></li>
+          <li><a href="#" data-popup--open="theodor">Theodor</a></li>
           <li><a href="http://elementory.co/">Mads</a></li>
           <li><a href="#">Lui</a></li>
           <li><a href="http://ludvig.xyz/">Ludvig</a></li>
@@ -59,9 +63,15 @@ session_start();
   </div>
 </div>
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-<script src="js/index.js"></script>
-<script src="js/motus.js"></script>
+<!--MODALS-->
+
+<div data-popup="theodor" class="popup">
+  <div class="popup-container">
+    <h4>Theodor</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="right"><a data-popup--close="theodor" href="#">Close</a></div>
+  </div>
+</div>
 
 </body>
 </html>
