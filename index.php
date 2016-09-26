@@ -42,17 +42,15 @@ session_start();
       </div>
     </div>
     <div class="grid-6 offset-3">
-      <ul class="inline">
-        <div class="card">
-          <h5>Aflys Moduler Knappen <i class="ion-ios-color-wand"></i></h5>
-          <p>
-            Med denne knap kan du aflyse moduler på lectio! Alt du skal gøre er at trække knappen til bogmærkelinjen på din computer, når du så går ind på dit skema på lectio skal du trykke på knappen i din bogmærke linje, så skriver du bare navnet ind på det hold du vil aflyse moduler for, og voila!
-          </p>
-          <div class="center">
-            <a class="btn red rounded" href="javascript:var promptHold; promptHold=prompt('Angiv hold du vil fjerne moduler for, f.eks. 2m da'); ditHold = '\'Hold: '; ditHold += promptHold; ditHold += '\''; $('a[rel*='+ditHold+']').addClass('s2cancelled');$('a[rel*='+ditHold+']').children().children().removeClass('s2changed');">Aflys Moduler</a>
-          </div>
+      <div class="card">
+        <h5>Aflys Moduler Knappen <i class="ion-ios-color-wand"></i></h5>
+        <p>
+          Med denne knap kan du aflyse moduler på lectio! Alt du skal gøre er at trække knappen til bogmærkelinjen på din computer, når du så går ind på dit skema på lectio skal du trykke på knappen i din bogmærke linje, så skriver du bare navnet ind på det hold du vil aflyse moduler for, og voila!
+        </p>
+        <div class="center">
+          <a class="btn red rounded" href="javascript:var promptHold; promptHold=prompt('Angiv hold du vil fjerne moduler for, f.eks. 2m da'); ditHold = '\'Hold: '; ditHold += promptHold; ditHold += '\''; $('a[rel*='+ditHold+']').addClass('s2cancelled');$('a[rel*='+ditHold+']').children().children().removeClass('s2changed');">Aflys Moduler</a>
         </div>
-      </ul>
+      </div>
     </div>
   </div>
 </div>
