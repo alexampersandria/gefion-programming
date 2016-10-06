@@ -3,8 +3,8 @@
   <meta charset='UTF-8'>
   <title>Gefion Programming</title>
 
-  <link rel='stylesheet prefetch' href='http://resources.ludvig.xyz/normalize.css'>
-  <link rel='stylesheet prefetch' href='http://resources.ludvig.xyz/motus/css/motus.min.css'>
+  <link rel='stylesheet prefetch' href='motus/normalize.css'>
+  <link rel='stylesheet prefetch' href='motus/motus.min.css'>
   <link rel='stylesheet prefetch' href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
   <link rel='stylesheet' href='css/style.min.css'>
 
