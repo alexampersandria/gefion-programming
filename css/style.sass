@@ -1,5 +1,7 @@
-$fG1: #313346
-$fG2: #182234
+$fG1: #485563
+$fG2: #29323c
+$gG1: #03d9b5
+$gG2: #00d595
 
 body
   font-family: Segoe UI, apple-system-font, Roboto, Helvetica, Arial, Sans-serif
@@ -7,10 +9,43 @@ body
 h1,h2, h3, h4, h5, h6
   font-family: 'Roboto', Roboto, Helvetica, Arial, sans-serif
 
+@keyframes blinker
+  0%
+    background-color: rgba(255,255,255,0)
+  20%
+    background-color: rgba(255,255,255,0)
+  35%
+    background-color: rgba(255,255,255,.6)
+  65%
+    background-color: rgba(255,255,255,.6)
+  80%
+    background-color: rgba(255,255,255,0)
+  100%
+    background-color: rgba(255,255,255,0)
+
+.headerlogo
+  margin: 80px 0
+  font-weight: 300
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3)
+  &:after
+    content: ""
+    display: inline-block
+    width: 8px
+    height: 42px
+    position: relative
+    left: 4px
+    background-color: #fff
+    animation: blinker 1.2s linear infinite
+
 .logo-grid
   text-align: center
   position: relative
   top: -24px
+  img
+    position: relative
+    top: -12px
+    display: none
+    width: 64px
 
 .nav-grid
   text-align: center
@@ -40,9 +75,6 @@ h1,h2, h3, h4, h5, h6
       text-align: center
       padding-bottom: 12px
       border-bottom: 1px solid rgba(0,0,0,0.1)
-  h1
-    font-weight: 400
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3)
   &:after
     content: ""
     display: inline-block
@@ -59,6 +91,8 @@ h1,h2, h3, h4, h5, h6
     text-align: left
     position: relative
     top: auto
+    img
+      display: block
   .nav-grid
     text-align: right
   .menuNav
