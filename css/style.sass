@@ -23,6 +23,15 @@ h1,h2, h3, h4, h5, h6
   100%
     background-color: rgba(255,255,255,0)
 
+@keyframes colors
+  0%
+    opacity: 1
+  50%
+    opacity: .8
+  100%
+    opacity: 1
+
+
 .headerlogo
   margin: 80px 0
   font-weight: 300
@@ -50,6 +59,59 @@ h1,h2, h3, h4, h5, h6
 .nav-grid
   text-align: center
 
+.colorWrap
+  margin-top: 60px
+  transform: skewY(-10deg)
+
+.colorThingy
+  display: inline-block
+  margin: -2px
+  width: 120px
+  height: 80px
+  background-color: red
+  &:nth-child(1)
+    background-color: $gG2
+    animation: colors 2s infinite
+    position: relative
+    left: 14px
+  &:nth-child(2)
+    background-color: darken($gG2, 5)
+    animation: colors 2s infinite .5s
+    position: relative
+    left: 14px
+  &:nth-child(3)
+    background-color: darken($gG2, 10)
+    animation: colors 2s infinite 1s
+    position: relative
+    left: 14px
+  &:nth-child(5)
+    background-color: darken($gG1, 10)
+    animation: colors 2s infinite 1.5s
+    position: relative
+    left: -14px
+    top: -1px
+  &:nth-child(6)
+    background-color: darken($gG1, 5)
+    animation: colors 2s infinite 1s
+    position: relative
+    left: -14px
+    top: -1px
+  &:nth-child(7)
+    background-color: $gG1
+    animation: colors 2s infinite
+    position: relative
+    left: -14px
+    top: -1px
+
+.colorHeader
+  position: relative
+  text-transform: uppercase
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3)
+  font-weight: 700
+  top: -120px
+  color: #fff
+  z-index: 8
+
 .menuNav
   border-bottom: 1px solid rgba(255,255,255,0.15)
   padding-bottom: 64px
@@ -59,6 +121,11 @@ h1,h2, h3, h4, h5, h6
     margin: 0.5rem
     &:hover
       opacity: .75
+  &.menuNavDark
+    a
+      color: #aaa
+      &:hover
+        color: $gG2
 
 .bg.header
   background: $fG1
