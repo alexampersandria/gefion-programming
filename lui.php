@@ -1,5 +1,14 @@
 <?php
 session_start();
+
+if(!isset($title)) {
+  $title = "Name Generator";
+}
+
+if(!isset($language)) {
+  $language = "Python";
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -15,80 +24,58 @@ session_start();
 
 <body>
 
-<div class="container pt">
-  <div class="inline menuNav menuNavDark bb">
-    <div class="grid-1 logo-grid">
-      <img src="logoBlack.png" class="logo img-responsive-max">
+<div class="bg header">
+  <div class="container">
+    <div class="inline menuNav">
+      <div class="grid-1 logo-grid">
+        <img src="logo.png" class="logo img-responsive-max">
+      </div>
+      <div class="grid-11 nav-grid">
+        <ul>
+          <?php echo $globalNav; ?>
+        </ul>
+      </div>
     </div>
-    <div class="grid-11 nav-grid">
-      <ul>
-        <?php echo $globalNav; ?>
-      </ul>
+    <div class="grid-12 mt center">
+      <h1 class="headerTitle"><?php echo $title; ?></h1>
+      <h6 class="headerLanguage"><?php echo $language; ?></h6>
     </div>
   </div>
 </div>
 
 <div class="container">
-  <div class="grid-8 offset-2">
-    <h4 class="center">Lui, sådan her bruger man motus</h4>
-      <pre>
-        <code class="prism language-python">
+  <div class="grid-12">
+    <pre>
+      <code class="prism language-python">
 import random
 
-printnames = open("names.json", "w")
-
-opener = '{\n\t"pokemans": {\n '
-
-printnames.write(opener)
-printnames.close()
-
-count = 0
-
-for x in range(10000):
-    count = count + 1
-    syllabels = random.randint(2,4)
-    vorc = random.randint(0,1)
-    name = ""
-    consonants = 'bcdfghjklmnpqrstvwxz'
-    vowels = 'aeiouy'
-    for x in range(syllabels):
-        chooser = random.randint(0,9)
-        if vorc == 0:
-            vowel = random.choice(vowels)
-            name = name + vowel
-            consonant = random.choice(consonants)
-            if chooser == 0:
-                name = name + consonant + consonant
-            else:
-                name = name + consonant
+syllabels = random.randint(2,4)
+vorc = random.randint(0,1)
+name = ""
+consonants = 'bcdfghjklmnpqrstvwxz'
+vowels = 'aeiouy'
+for x in range(syllabels):
+    chooser = random.randint(0,9)
+    if vorc == 0:
+        vowel = random.choice(vowels)
+        name = name + vowel
+        consonant = random.choice(consonants)
+        if chooser == 0:
+            name = name + consonant + consonant
         else:
-            consonant = random.choice(consonants)
-            if chooser == 0:
-                name = name + consonant + consonant
-            else:
-                name = name + consonant
-            vowel = random.choice(vowels)
-            name = name + vowel
+            name = name + consonant
+    else:
+        consonant = random.choice(consonants)
+        if chooser == 0:
+            name = name + consonant + consonant
+        else:
+            name = name + consonant
+        vowel = random.choice(vowels)
+        name = name + vowel
 
-    name = name.title()
-
-    ap = str(random.randint(0,11))
-    dp = str(random.randint(0,11))
-
-    pokeman = '\t\t"' + str(count) + '": {\n\t\t\t"name": "' + name + '",\n\t\t\t"ap": ' + ap + ',\n\t\t\t"dp": ' + dp + '\n\t\t},\n'
-
-    printnames = open("names.json", "a")
-    printnames.write(pokeman)
-    printnames.close()
-
-printnames = open("names.json", "a")
-
-closer = '\t\t"0": {\n\t\t\t"name": "Sentinel",\n\t\t\t"ap": 11,\n\t\t\t"dp": 11\n\t\t}\n\t}\n}'
-
-printnames.write(closer)
-printnames.close()
-</code>
-      </pre>
+name = name.title()
+      </code>
+    </pre>
   </div>
 </div>
 
