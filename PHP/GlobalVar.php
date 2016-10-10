@@ -38,4 +38,10 @@
   <script src='http://gefion-programming.com/js/index.js'></script>
   ";
 
+  $globalNav = "
+  <li><a href='about'>Om os</a></li>
+  <li><a href='#'>Projekter</a></li>
+  <li><a href='#'>Forum</a></li>
+  "
+
 ?>

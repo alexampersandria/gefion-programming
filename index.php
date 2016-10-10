@@ -23,9 +23,7 @@ session_start();
       </div>
       <div class="grid-11 nav-grid">
         <ul>
-          <li><a href="#">Om os</a></li>
-          <li><a href="#">Projekter</a></li>
-          <li><a href="#">Forum</a></li>
+          <?php echo $globalNav; ?>
         </ul>
       </div>
     </div>
