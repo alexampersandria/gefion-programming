@@ -34,11 +34,13 @@ pre[class*="language-"] {
 	margin: .5em 0;
 	overflow: auto;
 	border-radius: 0.3em;
+	padding: 0 24px
 }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #272822;
+	background:-webkit-linear-gradient(100deg, #485563, #29323c);
+	background:linear-gradient(100deg, #485563, #29323c);
 }
 
 /* Inline code */
@@ -82,7 +84,7 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-	color: #a6e22e;
+	color: #03d9b5;
 }
 
 .token.operator,
@@ -120,4 +122,3 @@ pre[class*="language-"] {
 .token.entity {
 	cursor: help;
 }
-
