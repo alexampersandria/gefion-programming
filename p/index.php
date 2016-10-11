@@ -10,14 +10,9 @@ mysqli_set_charset($conn, 'utf8');
 
 $Parsedown = new Parsedown();
 
-if (!empty($_GET['id'])) {
-  $id = mysqli_real_escape_string($conn, $_GET['id']);
-  $id = htmlspecialchars($id, ENT_QUOTES, 'UTF-8');
-} else {
-  $id = 1;
-}
+$id = empty($_GET['id']) ? 1 : intval($_GET['id']);
 
-$sql = "SELECT * FROM `articles` WHERE id='$id'";
+$sql = "SELECT * FROM `articles` WHERE id='$id' LIMIT 1"; // If you're worried about injection in general, use prepared statements
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -26,6 +21,11 @@ if ($result->num_rows > 0) {
     $lang = $row['lang'];
     $text = $row['text'];
   }
+} else {
+  // Throw 404 somehow!
+  $title = "404";
+  $lang = "en";
+  $text = "404 - Not found";
 }
 
 ?>
@@ -60,7 +60,7 @@ $( document ).ready(function() {
       </div>
     </div>
     <div class="grid-12 mt center">
-      <h1 class="headerTitle"><?php echo $title; ?></h1>
+      <h1 class="headerTitle"><?php echo $title; /* No escaping? *Asks myself* "Could he be doing the same thing on his website?" *Checks* "WELL YES HE COULD >:)" */?></h1>
       <h6 class="headerLanguage"><?php echo $lang; ?></h6>
     </div>
   </div>
