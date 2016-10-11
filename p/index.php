@@ -38,8 +38,8 @@ if ($result->num_rows > 0) {
 
 <script>
 $( document ).ready(function() {
-  $("pre code").addClass("prism").addClass("language-<?php echo strtolower($lang); ?>").prepend('\n').append('\n');
-  $("pre").addClass("prism").addClass("language-<?php echo strtolower($lang); ?>");
+  $("pre code").addClass("prism").prepend('\n').append('\n');
+  $("pre").addClass("prism");
 });
 </script>
 
