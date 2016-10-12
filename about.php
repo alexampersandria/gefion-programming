@@ -27,7 +27,7 @@ session_start();
         </ul>
       </div>
     </div>
-    <div class="grid-12 mt center">
+    <div class="grid-6 offset-2 mt center">
       <div class="colorWrap">
         <span class="colorThingy"></span>
         <span class="colorThingy"></span>
