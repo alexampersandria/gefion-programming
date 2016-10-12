@@ -15,31 +15,30 @@ session_start();
 
 <body>
 
-<div class="container pt">
-  <div class="inline menuNav menuNavDark bb">
-    <div class="grid-1 logo-grid">
-      <img src="logoBlack.png" class="logo img-responsive-max">
+<div class="bg header">
+  <div class="container">
+    <div class="inline menuNav">
+      <div class="grid-1 logo-grid">
+        <a href="http://gefion-programming.com"><img src="logo.png" class="logo img-responsive-max"></a>
+      </div>
+      <div class="grid-11 nav-grid">
+        <ul>
+          <?php echo $globalNav; ?>
+        </ul>
+      </div>
     </div>
-    <div class="grid-11 nav-grid">
-      <ul>
-        <?php echo $globalNav; ?>
-      </ul>
+    <div class="grid-12 mt center">
+      <div class="colorWrap">
+        <span class="colorThingy"></span>
+        <span class="colorThingy"></span>
+        <span class="colorThingy"></span>
+        <br>
+        <span class="colorThingy"></span>
+        <span class="colorThingy"></span>
+        <span class="colorThingy"></span>
+      </div>
+      <h1 class="colorHeader">Om os</h1>
     </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="grid-12 center">
-    <div class="colorWrap">
-      <span class="colorThingy"></span>
-      <span class="colorThingy"></span>
-      <span class="colorThingy"></span>
-      <br>
-      <span class="colorThingy"></span>
-      <span class="colorThingy"></span>
-      <span class="colorThingy"></span>
-    </div>
-    <h1 class="colorHeader">Om os</h1>
   </div>
 </div>
 

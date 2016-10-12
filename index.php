@@ -19,7 +19,7 @@ session_start();
   <div class="container">
     <div class="inline menuNav">
       <div class="grid-1 logo-grid">
-        <img src="logo.png" class="logo img-responsive-max">
+        <a href="http://gefion-programming.com"><img src="logo.png" class="logo img-responsive-max"></a>
       </div>
       <div class="grid-11 nav-grid">
         <ul>
