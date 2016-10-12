@@ -45,8 +45,7 @@
   ";
 
   $globalNav = "
-  <li><a href='about'>Om os</a></li>
-  <li><a href='#'>Forum</a></li>
+  <li><a href='http://gefion-programming.com/about'>Om os</a></li>
   <li><a href='#' id='navopen' class='button' onclick='drop1()'>Projekter</a></li>
   <div id='navopen' class='dropdown1 dropClosed'>
     <ul>
