@@ -1,8 +1,6 @@
 var s = 0
 $(document).click(function(){
-  console.log(event.target.id);
   if (event.target.id != "navopen"){
-    console.log("debug")
     $(".dropOpened").removeClass("dropOpened").addClass("dropClosed");
     $("#navclose").removeAttr("id").attr("id","navopen");
     s += 1
