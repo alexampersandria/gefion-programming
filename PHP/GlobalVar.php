@@ -8,7 +8,7 @@
 
   <link rel='stylesheet prefetch' href='motus/normalize.css'>
   <link rel='stylesheet prefetch' href='motus/motus.min.css'>
-  <link rel='stylesheet prefetch' href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+  <link rel='stylesheet prefetch' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
   <link rel='stylesheet' href='css/prism.css'>
   <link rel='stylesheet' href='css/style.min.css'>
 
