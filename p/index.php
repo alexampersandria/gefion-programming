@@ -16,19 +16,22 @@ if (!empty($_GET['id'])) {
     $id = htmlspecialchars($id, ENT_QUOTES, 'UTF-8');
     $idTitle = str_replace('-',' ',$id);
   }
-} else {
-  $id = 1;
 }
 
-$sql = "SELECT * FROM `articles` WHERE title='$idTitle'";
+$sql = "SELECT * FROM `articles` WHERE title='$idTitle' LIMIT 1";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
-    $title = htmlspecialchars(row['title'], ENT_QUOTES, 'UTF-8');
+    $title = htmlspecialchars($row['title'], ENT_QUOTES, 'UTF-8');
     $lang = htmlspecialchars($row['lang'], ENT_QUOTES, 'UTF-8');
     $text = $row['text'];
   }
+} else {
+  http_response_code(404);
+  $title = "404: %{title}";
+  $lang = "%{lang}";
+  $text = "%{text}";
 }
 
 ?>
