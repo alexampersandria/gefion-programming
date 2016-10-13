@@ -2,7 +2,7 @@
 
   $root = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/';
 
-  $GlobalHead = "
+  $GlobalHead = <<<'EOD'
   <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
   <title>Gefion Programming</title>
 
@@ -21,9 +21,9 @@
   <script src='js/motus.js'></script>
   <script src='js/index.js'></script>
   <script src='js/prism.js'></script>
-  ";
+  EOD;
 
-  $GlobalHeadDistro = "
+  $GlobalHeadDistro = <<<'EOD'
   <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
   <title>Gefion Programming</title>
 
@@ -42,9 +42,9 @@
   <script src='http://gefion-programming.com/js/motus.js'></script>
   <script src='http://gefion-programming.com/js/index.js'></script>
   <script src='http://gefion-programming.com/js/prism.js'></script>
-  ";
+  EOD;
 
-  $globalNav = "
+  $globalNav = <<<'EOD'
   <li><a href='http://gefion-programming.com/about'>Om os</a></li>
   <li><a href='#' id='navopen' class='button' onclick='drop1()'>Projekter</a></li>
   <div id='navopen' class='dropdown1 dropClosed'>
@@ -53,6 +53,6 @@
       <li><a href='http://gefion-programming.com/projects' class='muted'>&gt; See all</a></li>
     </ul>
   </div>
-  ";
+  EOD;
 
 ?>
