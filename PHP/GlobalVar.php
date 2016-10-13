@@ -45,9 +45,14 @@
   ";
 
   $globalNav = "
-  <li><a href='about'>Om os</a></li>
-  <li><a href='#'>Projekter</a></li>
-  <li><a href='#'>Forum</a></li>
+  <li><a href='http://gefion-programming.com/about'>Om os</a></li>
+  <li><a href='#' id='navopen' class='button' onclick='drop1()'>Projekter</a></li>
+  <div id='navopen' class='dropdown1 dropClosed'>
+    <ul>
+      <li><a href='http://gefion-programming.com/p/intro-til-html'>Intro til HTML</a></li>
+      <li><a href='http://gefion-programming.com/projects' class='muted'>&gt; See all</a></li>
+    </ul>
+  </div>
   ";
 
 ?>

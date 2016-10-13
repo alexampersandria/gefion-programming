@@ -19,7 +19,7 @@ session_start();
   <div class="container">
     <div class="inline menuNav">
       <div class="grid-1 logo-grid">
-        <img src="logo.png" class="logo img-responsive-max">
+        <a href="http://gefion-programming.com"><img src="logo.png" class="logo img-responsive-max"></a>
       </div>
       <div class="grid-11 nav-grid">
         <ul>
@@ -35,26 +35,14 @@ session_start();
 
 <div class="container">
   <div class="grid-12 center">
-    <h6>Edgan Allan Poe, The Raven</h6>
+    <h6>Vil du være med?</h6>
   </div>
-  <div class="grid-4 offset-2 center">
+  <div class="grid-8 offset-2 justify">
     <p>
-      Once upon a midnight dreary, while I pondered, weak and weary,<br>
-      Over many a quaint and curious volume of forgotten lore—<br>
-      While I nodded, nearly napping, suddenly there came a tapping,<br>
-      As of some one gently rapping, rapping at my chamber door.<br>
-      “’Tis some visitor,” I muttered, “tapping at my chamber door—<br>
-      Only this and nothing more.”
+      I en verden der i stigende grad er digitaliseret, er der større efterspørgsel efter IT-kyndige end nogensinde før. Vi lever i en tid hvor man ikke behøver at tage en 5 år lang uddannelse for at lære at sætte en hjemmeside op. Med tid og interesse kan alle lære alt fra simpel HTML til C++ og maskinlæring, uden at skulle flytte sig fra computeren. Der er et overflod af viden, og en overflod af mennesker der med glæde deler ud af deres erfaring. Det eneste krav: Sæt dig ved dit tastatur, lyt, læs og leg!
     </p>
-  </div>
-  <div class="grid-4 center">
     <p>
-      Presently my soul grew stronger; hesitating then no longer, <br>
-      “Sir,” said I, “or Madam, truly your forgiveness I implore;<br>
-      But the fact is I was napping, and so gently you came rapping,<br>
-      And so faintly you came tapping, tapping at my chamber door,<br>
-      That I scarce was sure I heard you”—here I opened wide the door;—<br>
-      Darkness there and nothing more.
+      Vil du have fat i os? Skriv til <a href="mailto:admin@gefion-programming.com">admin@gefion-programming.com</a>.
     </p>
   </div>
 </div>

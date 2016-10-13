@@ -11,13 +11,16 @@ mysqli_set_charset($conn, 'utf8');
 $Parsedown = new Parsedown();
 
 if (!empty($_GET['id'])) {
-  $id = mysqli_real_escape_string($conn, $_GET['id']);
-  $id = htmlspecialchars($id, ENT_QUOTES, 'UTF-8');
+  if (preg_match('/[a-zA-Z\-]*/',$id)) {
+    $id = mysqli_real_escape_string($conn, $_GET['id']);
+    $id = htmlspecialchars($id, ENT_QUOTES, 'UTF-8');
+    $idTitle = str_replace('-',' ',$id);
+  }
 } else {
   $id = 1;
 }
 
-$sql = "SELECT * FROM `articles` WHERE id='$id'";
+$sql = "SELECT * FROM `articles` WHERE title='$idTitle'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -51,7 +54,7 @@ $( document ).ready(function() {
   <div class="container">
     <div class="inline menuNav">
       <div class="grid-1 logo-grid">
-        <img src="../logo.png" class="logo img-responsive-max">
+        <a href="http://gefion-programming.com"><img src="../logo.png" class="logo img-responsive-max"></a>
       </div>
       <div class="grid-11 nav-grid">
         <ul>

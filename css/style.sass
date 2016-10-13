@@ -31,9 +31,32 @@ h1,h2, h3, h4, h5, h6
   100%
     opacity: 1
 
+.dropdown1
+  background: linear-gradient(0deg, rgba(255,255,255,.8) , rgba(255,255,255,1))
+  height: auto
+  width: auto
+  position: absolute
+  right: 0
+  top: 65px
+  a
+    color: $fG2 !important
+    position: relative
+    right: 30px
+    &.muted
+      opacity: .5
+    &:hover
+      color: #222
+  li
+    display: block
+
+.dropOpened
+
+.dropClosed
+  display: none
+
 
 .headerlogo
-  margin: 80px 0
+  margin: 30px 0 50px 0
   font-weight: 300
   text-shadow: 0 2px 4px rgba(0,0,0,0.3)
   &:after
@@ -62,7 +85,7 @@ h1,h2, h3, h4, h5, h6
   top: -24px
   img
     position: relative
-    top: -12px
+    top: -30px
     display: none
     width: 64px
 
@@ -70,7 +93,8 @@ h1,h2, h3, h4, h5, h6
   text-align: center
 
 .colorWrap
-  margin-top: 60px
+  margin-top: 0
+  margin-bottom: -60px
   transform: skewY(-10deg)
 
 .prism
@@ -125,7 +149,7 @@ h1,h2, h3, h4, h5, h6
   text-transform: uppercase
   text-shadow: 0 2px 4px rgba(0,0,0,0.3)
   font-weight: 700
-  top: -70px
+  top: -10px
   color: #fff
   z-index: 8
 
@@ -197,4 +221,4 @@ h1,h2, h3, h4, h5, h6
     width: 120px
     height: 80px
   .colorHeader
-    top: -120px
+    top: -60px
