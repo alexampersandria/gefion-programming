@@ -25,8 +25,8 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
-    $title = $row['title'];
-    $lang = $row['lang'];
+    $title = htmlspecialchars(row['title'], ENT_QUOTES, 'UTF-8');
+    $lang = htmlspecialchars($row['lang'], ENT_QUOTES, 'UTF-8');
     $text = $row['text'];
   }
 }
