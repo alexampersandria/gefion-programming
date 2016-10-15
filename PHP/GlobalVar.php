@@ -55,4 +55,18 @@
   </div>
   EOD;
 
+  $dateYear = date("Y");
+
+  $globalFooter = <<<HTML
+    <div class="container">
+      <div class="grid-6 offset-3 bt center muted pt mb">
+        <p>
+          Built using <a href="http://resources.ludvig.xyz/motus/">motus</a>, an open-source framework by <a href="http://ludvig.xyz">Ludvig Alexander Brüchmann</a>.
+          <br>
+          Copyright &copy; Gefion Programming, $dateYear
+        </p>
+      </div>
+    </div>
+HTML;
+
 ?>

@@ -53,15 +53,7 @@ session_start();
   </div>
 </div>
 
-<div class="container">
-  <div class="grid-6 offset-3 bt center muted pt mb">
-    <p>
-      Built using <a href="http://resources.ludvig.xyz/motus/">motus</a>, an open-source framework by <a href="http://ludvig.xyz">Ludvig Alexander Brüchmann</a>.
-      <br>
-      Copyright &copy; Gefion Programming, <?php echo date("Y");?>
-    </p>
-  </div>
-</div>
+<?php echo $globalFooter; ?>
 
 </body>
 </html>
